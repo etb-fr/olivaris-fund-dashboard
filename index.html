@@ -122,7 +122,7 @@ h1 {
 
 .kpi-grid {
   display: grid;
-  grid-template-columns: minmax(220px, 0.9fr) minmax(0, 1.8fr) minmax(220px, 0.9fr);
+  grid-template-columns: minmax(0, 2.35fr) minmax(240px, 0.85fr);
   gap: 14px;
   margin-bottom: 24px;
 }
@@ -152,6 +152,10 @@ h1 {
   height: auto;
   display: block;
   margin-top: 12px;
+}
+
+.card-chart .mini-chart {
+  min-height: 220px;
 }
 
 .panel {
@@ -304,10 +308,6 @@ tbody tr:hover {
       </header>
 
       <section class="kpi-grid">
-        <article class="card">
-          <div class="card-label">Perf du fonds</div>
-          <div class="card-value">+0.34%</div>
-        </article>
         <article class="card card-chart">
           <div class="card-label">Fonds vs Nasdaq / QQQ</div>
           <svg class="mini-chart" viewBox="0 0 520 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Courbes fonds et Nasdaq">
@@ -329,7 +329,7 @@ tbody tr:hover {
         </article>
         <article class="card">
           <div class="card-label">Unrealized P&amp;L actuel</div>
-          <div class="card-value">+5.67 €</div>
+          <div class="card-value tone-positive">+5.67 €</div>
         </article>
       </section>
 
