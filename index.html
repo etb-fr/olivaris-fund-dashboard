@@ -197,6 +197,20 @@ tbody tr:hover {
   background: rgba(255, 255, 255, 0.02);
 }
 
+.ticker-cell {
+  min-width: 170px;
+}
+
+.ticker-main {
+  font-weight: 700;
+}
+
+.ticker-sub {
+  margin-top: 3px;
+  color: var(--text-muted);
+  font-size: 0.83rem;
+}
+
 .pillar-stack {
   display: grid;
   gap: 14px;
@@ -314,8 +328,8 @@ tbody tr:hover {
 </svg>
         </article>
         <article class="card">
-          <div class="card-label">P&amp;L realized depuis le debut</div>
-          <div class="card-value">+0.00 €</div>
+          <div class="card-label">Unrealized P&amp;L actuel</div>
+          <div class="card-value">+5.67 €</div>
         </article>
       </section>
 
@@ -335,31 +349,46 @@ tbody tr:hover {
             </thead>
             <tbody>
                 <tr>
-                  <td>BESI.AS</td>
+                  <td class="ticker-cell">
+                    <div class="ticker-main">BESI.AS</div>
+                    <div class="ticker-sub">BE Semiconductor Industries</div>
+                  </td>
                   <td>2</td>
                   <td>17.34%</td>
                   <td class="tone-positive">+45.10 €</td>
                 </tr>
                 <tr>
-                  <td>MU</td>
+                  <td class="ticker-cell">
+                    <div class="ticker-main">MU</div>
+                    <div class="ticker-sub">Micron</div>
+                  </td>
                   <td>1</td>
                   <td>15.44%</td>
                   <td class="tone-negative">-4.74 €</td>
                 </tr>
                 <tr>
-                  <td>TSM</td>
+                  <td class="ticker-cell">
+                    <div class="ticker-main">TSM</div>
+                    <div class="ticker-sub">Taiwan Semiconductor Manufacturing</div>
+                  </td>
                   <td>1</td>
                   <td>14.03%</td>
                   <td class="tone-negative">-7.93 €</td>
                 </tr>
                 <tr>
-                  <td>AVGO</td>
+                  <td class="ticker-cell">
+                    <div class="ticker-main">AVGO</div>
+                    <div class="ticker-sub">Broadcom</div>
+                  </td>
                   <td>1</td>
                   <td>12.90%</td>
                   <td class="tone-negative">-23.86 €</td>
                 </tr>
                 <tr>
-                  <td>VRT</td>
+                  <td class="ticker-cell">
+                    <div class="ticker-main">VRT</div>
+                    <div class="ticker-sub">Vertiv</div>
+                  </td>
                   <td>1</td>
                   <td>10.77%</td>
                   <td class="tone-negative">-1.75 €</td>
